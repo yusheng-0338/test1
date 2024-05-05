@@ -4,36 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd58ec3-e7b3-4314-8a7d-6981fe340da7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/controller/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/dto/SoldDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/dto/SoldOrderMsgDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/ItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/ShopMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/pojos/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/pojos/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/pojos/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/pojos/Shop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/pojos/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ItemMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderDetailMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ShopMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
+    <list default="true" id="ecd58ec3-e7b3-4314-8a7d-6981fe340da7" name="Changes" comment="local commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/in/OrderIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/out/OrderOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/99c2da0f-0da0-46a1-8ea1-58a2e4825136.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/99c2da0f-0da0-46a1-8ea1-58a2e4825136.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/dto/SoldDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/out/SoldDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/dto/SoldOrderMsgDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/out/SoldOrderMsgDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +42,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -75,6 +65,9 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2ZqMcJeBUFVYwOH0xWQXPLX2Z1e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,6 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.TestDemo.executor": "Debug",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -92,7 +86,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/test/demo-test/demo-test/src/main/resources/mapper",
+    "last_opened_file_path": "D:/test/demo-01/src/main/java/com/In",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +107,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\test\demo-01\src\main\java\com\In" />
       <recent name="D:\test\demo-test\demo-test\src\main\resources\mapper" />
     </key>
   </component>
@@ -123,7 +118,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
+  <component name="RunManager" selected="Application.TestDemo">
+    <configuration name="TestDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestDemo" />
+      <module name="demo-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDemo.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo-test" />
       <option name="PACKAGE_NAME" value="" />
@@ -150,6 +152,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DemoApplication" />
+        <item itemvalue="Application.TestDemo" />
         <item itemvalue="JUnit.TestDemo.test01" />
       </list>
     </recent_temporary>
@@ -174,7 +177,9 @@
       <workItem from="1714903732115" duration="3946000" />
       <workItem from="1714913726611" duration="1614000" />
       <workItem from="1714915349975" duration="1709000" />
-      <workItem from="1714917080656" duration="17392000" />
+      <workItem from="1714917080656" duration="17972000" />
+      <workItem from="1715008405806" duration="2596000" />
+      <workItem from="1715179052468" duration="7288000" />
     </task>
     <servers />
   </component>
@@ -191,6 +196,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="local commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="local commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

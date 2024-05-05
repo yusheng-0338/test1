@@ -11,4 +11,25 @@
     <select id= "selectAllBySellerId" resultMap="baseMap">
         select * from `order`
     </select>
+
+    <select id= "selectAllBySellerOut" resultType="com.demo.out.OrderOut">
+        SELECT s.shop_name AS shop_name, o.id AS order_id, u.nickname AS buyer_nickname,
+               COUNT(od.id) AS item_count,
+               GROUP_CONCAT(CONCAT(i.title, ' ', i.color, ' ', i.size, ' ', i.price) SEPARATOR ',') AS item_details
+        FROM order_detail od
+                 JOIN `order` o ON od.t_id = o.id
+                 JOIN user u ON o.buyer_id = u.id
+                 JOIN item i ON od.item_id = i.id
+                 JOIN shop s ON i.shop_id = s.id
+        WHERE 1=1
+        <if test="shopName != null">
+            AND s.shop_name LIKE CONCAT('%', #{shopName}, '%')
+        </if>
+        <if test="numMin != null and numMax != null">
+            AND (SELECT COUNT(*) FROM order_detail WHERE t_id = o.id) BETWEEN #{numMin} AND #{numMax}
+        </if>
+        GROUP BY o.id
+        ORDER BY item_count DESC
+            LIMIT #{page}, #{rows}
+    </select>
 </mapper>

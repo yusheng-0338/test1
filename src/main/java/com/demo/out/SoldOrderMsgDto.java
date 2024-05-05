@@ -1,9 +1,7 @@
-package com.demo.dto;
+package com.demo.out;
 
-import com.demo.pojos.Item;
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 @Data

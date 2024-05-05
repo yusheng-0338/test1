@@ -11,4 +11,10 @@ public class TestDemo {
         Class c = User.class;
         System.out.println(c == User.class);
     }
+
+    public static void main(String[] args) {
+        char a = 'a';
+        int num = (int) a;
+        System.out.println(num);
+    }
 }

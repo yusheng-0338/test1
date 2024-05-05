@@ -1,8 +1,10 @@
 package com.demo.service.impl;
 
 
-import com.demo.dto.SoldDto;
-import com.demo.dto.SoldOrderMsgDto;
+import com.demo.in.OrderIn;
+import com.demo.out.OrderOut;
+import com.demo.out.SoldDto;
+import com.demo.out.SoldOrderMsgDto;
 import com.demo.mapper.*;
 import com.demo.pojos.*;
 import com.demo.service.OrderService;
@@ -79,6 +81,16 @@ public class OrderServiceImpl implements OrderService {
 
 
         return soldOrderMsgDtoList;
+    }
+
+    @Override
+    public List<OrderOut> getSoldOrderMsgAll(OrderIn orderIn) {
+
+//        //当前页
+//        int page =  (orderIn.getPage() - 1) * orderIn.getRows();
+
+        return orderMapper.selectAllBySellerOut(orderIn.getShopName(), orderIn.getNumMax(), orderIn.getNumMin(),  (orderIn.getPage() - 1) * orderIn.getRows(), orderIn.getRows());
+
     }
 
 

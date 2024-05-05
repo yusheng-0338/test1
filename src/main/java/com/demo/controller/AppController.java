@@ -1,12 +1,11 @@
 package com.demo.controller;
 
-import com.demo.dto.SoldOrderMsgDto;
+import com.demo.in.OrderIn;
+import com.demo.out.OrderOut;
+import com.demo.out.SoldOrderMsgDto;
 import com.demo.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -23,5 +22,11 @@ public class AppController {
     public List<SoldOrderMsgDto> getSoldOrderMsg(){
 
         return orderService.getSoldOrderMsg();
+    }
+
+    @PostMapping(value = "/getSoldOrderMsgAll")
+    public List<OrderOut> getSoldOrderMsgAll(@RequestBody OrderIn orderIn){
+
+        return orderService.getSoldOrderMsgAll(orderIn);
     }
 }
