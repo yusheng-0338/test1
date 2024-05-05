@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.OrderMapper">
+
+    <resultMap type="Order" id="baseMap">
+        <id property="id" column="id" javaType="String" jdbcType="VARCHAR"/>
+        <result property="sellerId" column="seller_id" javaType="String" jdbcType="VARCHAR"/>
+        <result property="buyerId" column="buyer_id" javaType="String" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id= "selectAllBySellerId" resultMap="baseMap">
+        select * from `order`
+    </select>
+</mapper>

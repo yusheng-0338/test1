@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.OrderDetailMapper">
+
+    <resultMap type="OrderDetail" id="baseMap">
+        <id property="id" column="id" javaType="String" jdbcType="VARCHAR"/>
+        <result property="tId" column="t_id" javaType="String" jdbcType="VARCHAR"/>
+        <result property="itemId" column="item_id" javaType="String" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="selectByTid" resultMap="baseMap">
+        select * from order_detail where t_id=#{tId}
+    </select>
+</mapper>

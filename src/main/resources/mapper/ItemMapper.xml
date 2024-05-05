@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.mapper.ItemMapper">
+    <resultMap type="Item" id="baseMap">
+        <id property="id" column="id" javaType="String" jdbcType="VARCHAR"/>
+        <result property="title" column="title" javaType="String" jdbcType="VARCHAR"/>
+        <result property="color" column="color" javaType="String" jdbcType="VARCHAR"/>
+        <result property="size" column="size" javaType="String" jdbcType="VARCHAR"/>
+        <result property="sku" column="sku" javaType="String" jdbcType="VARCHAR"/>
+        <result property="shopId" column="shop_id" javaType="String" jdbcType="VARCHAR"/>
+        <result property="price" column="price" javaType="BigDecimal" jdbcType="DECIMAL"/>
+    </resultMap>
+    <select id="selectByShopId" resultMap="baseMap">
+        select * from item where shop_id= #{shopId}
+    </select>
+</mapper>
