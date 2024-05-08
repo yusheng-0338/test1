@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd58ec3-e7b3-4314-8a7d-6981fe340da7" name="Changes" comment="local commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/in/OrderIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/out/OrderOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/99c2da0f-0da0-46a1-8ea1-58a2e4825136.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/99c2da0f-0da0-46a1-8ea1-58a2e4825136.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/dto/SoldDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/out/SoldDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/dto/SoldOrderMsgDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/out/SoldOrderMsgDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDemo.java" afterDir="false" />
-    </list>
+    <list default="true" id="ecd58ec3-e7b3-4314-8a7d-6981fe340da7" name="Changes" comment="c" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -179,8 +167,17 @@
       <workItem from="1714915349975" duration="1709000" />
       <workItem from="1714917080656" duration="17972000" />
       <workItem from="1715008405806" duration="2596000" />
-      <workItem from="1715179052468" duration="7288000" />
+      <workItem from="1715179052468" duration="7684000" />
     </task>
+    <task id="LOCAL-00001" summary="c">
+      <option name="closed" value="true" />
+      <created>1715193119624</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715193119624</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +188,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -199,7 +208,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="local commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="local commit" />
+    <MESSAGE value="条件筛选" />
+    <MESSAGE value="c" />
+    <option name="LAST_COMMIT_MESSAGE" value="c" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
