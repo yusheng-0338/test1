@@ -32,4 +32,50 @@
         ORDER BY item_count DESC
             LIMIT #{page}, #{rows}
     </select>
+
+
+    <select id= "selectAllBySeller2Out" resultType="com.demo.out.Order2Out">
+        SELECT o.id AS order_id, o.buyer_id, u.nickname AS buyer_nickname,
+               item_info.item_ids, item_info.item_titles, item_info.colors,
+               item_info.sizes, item_info.skus, item_info.total_price
+        FROM `order` o
+                 JOIN user u ON o.buyer_id = u.id
+                 JOIN (
+            SELECT od.t_id AS order_id,
+                   GROUP_CONCAT(i.id) AS item_ids,
+                   GROUP_CONCAT(i.title) AS item_titles,
+                   GROUP_CONCAT(i.color) AS colors,
+                   GROUP_CONCAT(i.size) AS sizes,
+                   GROUP_CONCAT(i.sku) AS skus,
+                   SUM(i.price) AS total_price
+            FROM order_detail od
+                     JOIN item i ON od.item_id = i.id
+            WHERE i.title = #{itemTitle}
+            GROUP BY od.t_id
+        ) AS item_info ON o.id = item_info.order_id;
+    </select>
+
+
+
+    <select id= "selectAllBySeller3Out" resultType="com.demo.out.OrderOut">
+        SELECT s.shop_name AS shop_name, o.id AS order_id, u.nickname AS buyer_nickname,
+        COUNT(od.id) AS item_count,
+        GROUP_CONCAT(CONCAT(i.title, ' ', i.color, ' ', i.size, ' ', i.price) SEPARATOR ',') AS item_details
+        FROM order_detail od
+        JOIN `order` o ON od.t_id = o.id
+        JOIN user u ON o.buyer_id = u.id
+        JOIN item i ON od.item_id = i.id
+        JOIN shop s ON i.shop_id = s.id
+        WHERE 1=1
+        <if test="shopName != null">
+            AND s.shop_name LIKE CONCAT('%', #{map.shop_name}, '%')
+        </if>
+        <if test="numMin != null and numMax != null">
+            AND (SELECT COUNT(*) FROM order_detail WHERE t_id = o.id) BETWEEN #{map.numMin} AND #{map.numMax}
+        </if>
+        GROUP BY o.id
+        ORDER BY item_count DESC
+        LIMIT #{map.page}, #{map.rows}
+    </select>
+
 </mapper>
